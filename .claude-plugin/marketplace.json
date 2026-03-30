@@ -1,0 +1,19 @@
+{
+  "name": "personal-writing",
+  "owner": {
+    "name": "Ben Roy"
+  },
+  "plugins": [
+    {
+      "name": "personal-writing",
+      "source": ".",
+      "description": "Six skills to help people write personal essays.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ben Roy"
+      },
+      "license": "MIT",
+      "keywords": ["writing", "essay", "personal writing", "editing", "creative writing"]
+    }
+  ]
+}
