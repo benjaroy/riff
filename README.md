@@ -49,7 +49,7 @@ This is just one path to use these skills. My sense is people will pick and choo
 
 **Installation**
 
-Copy the URL of this GitHub repository, then open the Claude desktop app and click "Customize." You'll see an option to "Add marketplace" where you can then paste the URL for this repository and click Sync. At that point, you'll see the Personal Writing plugin is available to install. Click install. Once it's installed, the six skills activate automatically based on what you say in your chat sessions, so just describe what you need help with and the right skill will kick in for Claude to use. You don't need to memorize anything (though you can also call these skills directly by using their slash commands).
+Copy the URL of this GitHub repository, then open the Claude desktop app and click "Customize." You'll see an option to "Add marketplace" where you can then paste the URL and click Sync. At that point, you'll see the Personal Writing plugin is available to install. Click install. Once it's installed, the six skills activate automatically based on what you say in your chat sessions, so just describe what you need help with and the right skill will kick in for Claude to use. You don't need to memorize anything (though you can also call these skills directly by using their slash commands).
 
 **A final note**
 
