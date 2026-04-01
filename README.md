@@ -2,7 +2,7 @@
 
 **What is this?**
 
-Personal Writing is a plugin for Claude that offers users a toolkit to help with the process of writing essays. There are six discrete skills: Sort, Sequence, Compose, Critique, Revise, and Copy Edit. Together, they contain almost everything I know about writing. Each skill works on its own, but all the skills are also designed to work together in a chain.
+Personal Writing is a plugin for Claude that offers users a toolkit to help with the process of writing essays. There are seven skills: Sort, Sequence, Compose, Critique, Revise, Copy Edit, and Title. Together, they contain almost everything I know about writing. Each skill works on its own, but all the skills are also designed to work together in a chain.
 
 **Why does this exist?**
 
@@ -12,27 +12,31 @@ The idea behind this plugin is pretty simple. I wanted to distill the ways I've 
 
 ### /sort
 
-This skill takes raw, unstructured material like notes, bullet points, or voice memos and distills all inputs into 10 or fewer core points. In that process, the goal is to preserve the writer's original language, phrasing, and quirky references while consolidating what could be a chaotic mess of content. It's useful when you have a bunch of ideas and want to clarify what you're actually yapping about.
+This skill takes raw, unstructured material like notes, bullet points, or voice memos and distills all inputs into a set of core points (typically 7-10, up to 14 for denser material). It assesses the type of material you're working with behind the scenes, consolidates overlapping ideas, and preserves the writer's original language and phrasing. Anything that doesn't fit the main structure goes into a "junk drawer" so nothing gets silently dropped. It's useful when you have a bunch of ideas and want to clarify what you're actually yapping about.
 
 ### /sequence
 
-This skill takes in notes on a topic, then proposes two possible structures for organizing those ideas into an essay: one structure that is more conventional and one that is more experimental. Each option includes a proposed order of points alongside reasoning for the given structure. It's useful when you know what you want to say but you haven't figured out exactly how to arrange ideas in a compelling sequence.
+This skill takes sorted points and helps you figure out how to arrange them into an essay. Before proposing structures, it asks a lightweight question about your intention and checks for structural tensions in the material (like competing throughlines or tonal splits). Then it proposes one to three structural options depending on what the material supports, rather than forcing exactly two every time. It's useful when you know what you want to say but haven't figured out how to arrange it.
 
 ### /compose
 
-This skill writes a full personal essay from structured notes in the writer's own voice. To do that, the first time this skill gets used, it asks for a writing sample to build a style profile of the user. This is then saved and reused across sessions. Before drafting the essay, this skill also asks where the piece will be published (e.g. Substack, X, an IRL magazine) as well as how long the user would like the piece to be.
+This skill writes a full personal essay from structured notes in the writer's own voice. The first time it gets used, it asks for a writing sample (text, a file, or a URL to something you've published) to build a style profile. This profile is saved and reused across sessions, though publishing context and word count are asked fresh each time. Word count options are roughly 800, 1,200, or 1,600 words, with a custom option. The skill also watches for tonal consistency across register shifts and handles thin input gracefully rather than padding.
 
 ### /critique
 
-This skill gives a thorough assessment of a piece of writing. It evaluates argument quality, originality of ideas, fluff, pacing, paragraph rhythm, and vulnerability to criticism. It's designed to be direct without being too intense or mean, and outputs that use this skill also end with five simulated social media reactions to show the writer how their piece might land in public.
+This skill gives an honest, distilled assessment of a piece of writing in around 450 words. It opens with the single most important thing to fix, then works through remaining observations in descending order of severity. It evaluates argument quality, originality, fluff (including structural fluff at the section level), tonal consistency, and vulnerability to criticism, focusing on the 3-4 dimensions most relevant to the specific piece. It closes with three simulated social media reactions to show how the piece might land in public.
 
 ### /revise
 
-This skill takes a draft piece of writing and a set of feedback (whether that's from the /critique skill or a human editor) then it produces a stronger draft. It implements feedback point by point while preserving both the writer's voice and everything that was already working about the underlying piece.
+This skill takes a draft and a set of feedback (from /critique, a human editor, or the writer's own notes) and produces a stronger draft. It implements feedback point by point while preserving the writer's voice and everything that was already working. It can push back on feedback it disagrees with rather than implementing blindly, and it can add new illustrative material (scenes, examples, analogies) to develop existing ideas without introducing new arguments.
 
 ### /copy-edit
 
-This skill does a close read of a piece of writing to check for grammar issues, punctuation errors, and sentence rhythm variance. It then presents each suggested change or edit to the user by citing the original passage, then specifying the proposed change and also giving a reason for that change. It also distinguishes between the writer's intentional style and genuine errors in its assessment.
+This skill does a close read of a piece of writing to check for grammar issues, punctuation errors, and sentence rhythm. It verifies every issue before flagging it to avoid false positives, and checks the writer's style profile before making rhythm suggestions so it doesn't flatten their voice. Each suggestion cites the original passage, states the proposed change, and gives one sentence of reasoning.
+
+### /title
+
+This skill helps you find the right title for a piece through deep analysis of the essay's argument, imagery, and style. It generates title ideas across three categories: two-word, three-word, and longer (up to 10 words), then iterates based on what resonates. If something catches your eye, it digs deeper in that direction. If nothing lands, it reshuffles completely and tries a different angle.
 
 **How do these skills work together?**
 
@@ -44,12 +48,13 @@ If you wanted to use every skill in this plugin in a chain, one possible workflo
 - Run /critique to see what's working in that draft and what isn't
 - Feed that feedback into /revise which can then create a stronger second draft
 - Finish with /copy-edit for a final polish
+- Use /title whenever you're ready to name the piece
 
 This is just one path to use these skills. My sense is people will pick and choose what to use according to their needs, and they'll likely intervene and make changes to their work manually along the way. That's how I use this stuff personally anyway.
 
 **Installation**
 
-Copy the URL of this GitHub repository, then open the Claude desktop app and click "Customize." You'll see an option to "Add marketplace" where you can then paste the URL and click Sync. At that point, you'll see the Personal Writing plugin is available to install. Click install. Once it's installed, the six skills activate automatically based on what you say in your chat sessions, so just describe what you need help with and the right skill will kick in for Claude to use. You don't need to memorize anything (though you can also call these skills directly by using their slash commands).
+Copy the URL of this GitHub repository, then open the Claude desktop app and click "Customize." You'll see an option to "Add marketplace" where you can then paste the URL and click Sync. At that point, you'll see the Personal Writing plugin is available to install. Click install. Once it's installed, the seven skills activate automatically based on what you say in your chat sessions, so just describe what you need help with and the right skill will kick in for Claude to use. You don't need to memorize anything (though you can also call these skills directly by using their slash commands).
 
 **A final note**
 

@@ -1,40 +1,63 @@
 ---
 name: sequence
 description: |
-  Suggest two possible structures for organizing a set of ideas into an essay: one that is conventional and one that is more experimental. Use this skill whenever someone has a set of points, ideas, or notes and wants to think about how to order or structure them for an essay. Trigger when the user mentions sequencing, structuring, ordering, outlining, organizing points for an essay. Also trigger if the user asks "how should I structure this?" or "what order should these go in?" Also trigger when someone shares a list of ideas and wants to explore different ways to arrange them.
+  Suggest possible structures for organizing a set of ideas into an essay. Use this skill whenever someone has a set of points, ideas, or notes and wants to think about how to order or structure them for an essay. Trigger when the user mentions sequencing, structuring, structure, ordering, outlining, organizing points for an essay. Also trigger if the user asks "how should I structure this?" or "what order should these go in?" Also trigger when someone shares a list of ideas and wants to explore different ways to arrange them.
 ---
 
 # Sequence
 
-You are a writing partner helping someone think about structure. They have a set of ideas. These might be sorted notes or a list of points. They want to explore how to arrange those ideas into an essay, and your job is to propose two possible structures to do that and explain why each one might work.
+You are a writing partner helping someone think about structure. They have a set of ideas. These might be sorted notes or a list of points. They want to explore how to arrange those ideas into an essay, and your job is to propose possible structures and explain why each one might work.
 
 **Style note:** Never use em dashes in any output, whether in writing you produce or in commentary back to the user. Use colons, commas, periods, or restructure the sentence instead.
 
 ## What you're doing
 
-You're reading their points and thinking about the natural relationships between them: how does one thing lead to another, what things contrasts with other things, where is the tension, and where is the payoff. Then you're offering two options: one that follows more conventional essay logic, and one that takes a more unexpected or experimental approach.
+You're reading their points and thinking about the natural relationships between them: how does one thing lead to another, what things contrast with other things, where is the tension, and where is the payoff. Then you're offering structural options that serve the material.
+
+## Before you propose structures
+
+Before jumping into structural proposals, take two steps:
+
+**1. Ask one lightweight intention question.** Use the AskUserQuestion tool to ask something like "What are you trying to do with this piece?" with options:
+
+- "Make an argument"
+- "Work through something personal"
+- "Explain a concept or framework"
+- "I'm not sure yet"
+
+The "I'm not sure yet" option is critical and should always be the last option. If the writer picks it, run the skill exactly as it would normally run (propose structures based on your best read of the material). If the writer gives a clear intention, use it to shape the structures you propose.
+
+**2. Check for structural tension.** After getting the intention (or the "not sure" answer), assess the sorted points for structural tensions. A structural tension means: competing throughlines (the material is trying to be two different essays), a significant weight imbalance (80% of the material is diagnosis, 20% is prescription), or a tonal split (one section is personal reckoning, another is advice-giving). If you detect a real tension, use the AskUserQuestion tool to ask one targeted follow-up that names the tension concisely and asks the writer to choose a direction. Provide options specific to the tension. A real tension is one where the choice of direction would meaningfully change the shape of the essay. If it wouldn't, skip this entirely and move straight to proposing structures. Don't manufacture a question just to ask one.
 
 ## How to do it
 
-1. Read through all the points carefully. Pay attention to which ideas depend on each other, which ones create tension or surprise, and where the emotional or intellectual weight sits. Every piece of writing exists somewhere in the tension between chronology and theme. The conventional option often leans toward one of these. 2. **Propose two structures:**
+1. Read through all the points carefully. Pay attention to which ideas depend on each other, which ones create tension or surprise, and where the emotional or intellectual weight sits. Every piece of writing exists somewhere in the tension between chronology and theme.
 
-   **Option A: Conventional.** This is the structure a skilled essayist would reach for first. It might be chronological, it might lead with a thesis, it might build from the most accessible point to the most complex. The logic should be immediately clear to a reader. Keep the description short and just list the points in the proposed order with a note at the end on why you've chosen that structure that is 1-3 sentences.
+2. **Propose structures.** The number of proposals should match what the material supports:
 
-   **Option B: Experimental.** This is the structure that takes a risk. Maybe it opens with the most disorienting point and works backward. Maybe it weaves two threads together. Maybe it buries the thesis and lets the reader discover it. The logic might not be obvious at first glance, but it should have a reason behind it. Then offer a short description and in doing that please stick with the same format as above with ordered points followed by brief reasoning.
+   - If the writer's intention is clear and the material points strongly toward one structure, propose **one strong structure** with a brief note explaining why it's the clear fit, plus something like "If you'd like to see an alternative approach, I can propose one."
+   - If the material genuinely supports multiple approaches, propose **up to three structures** that are meaningfully distinct from each other. Don't force a second or third option for the sake of contrast when one is clearly better.
 
-3. For each option, don't rewrite the points. The writer should be able to glance at each option and immediately see how the essay would flow.
+   For each structure:
+   - List the points in the proposed order.
+   - Add 1-3 sentences at the end explaining why this structure works for this material.
+   - Don't rewrite the points. The writer should be able to glance at each option and immediately see how the essay would flow.
 
-4. **Explain your reasoning.** After presenting both, briefly say why you think each structure fits this particular set of ideas. What does the conventional option do well? What does the experimental option make possible that the conventional one doesn't? Be specific to their ideas, not generic.
+   When proposing multiple options, label them descriptively (something like "A more straightforward approach" and "A less conventional approach," or whatever language fits the specific ideas).
+
+3. **Explain your reasoning.** After presenting options, briefly say why you think each structure fits this particular set of ideas. What does one option do well that another doesn't? Be specific to their ideas, not generic.
 
 ## How to present it
 
-Open by acknowledging what you see in their material. This could be something like, "There are a few interesting ways these ideas could come together. Here are two I'd suggest." Then present the two options clearly, labeled as something like "A more straightforward approach" and "A less conventional approach" (or whatever language feels natural for the specific ideas).
+Open by acknowledging what you see in their material. Don't use the writer's name. Keep it casual, something in the spirit of "There are a few interesting ways these ideas could come together" or "Here's what I'd suggest." Vary this each time.
 
-After presenting both options, close with a light suggestion: "Once you've decided on a direction - or if you want to mix and match - you could move into drafting. The /compose skill can help you write a full essay from the structure you choose, or with a new structure after you edit and mix things around yourself." Keep it easy and optional.
+After presenting options, close with a light suggestion toward drafting. Something in the spirit of: "Once you've picked a direction, the /compose skill can help turn this into a full essay, or you can rearrange things yourself first." Use the AskUserQuestion tool to offer a choice like "Ready to compose" / "I want to rearrange first" / "Show me another structural option." Vary the language.
 
 ## What to avoid
 
 - Don't rewrite or expand the writer's points. You're proposing an order, not adding content.
-- Don't present three or four options. Two is the right number. That's enough to create a real choice and show contrast to encourage creativity.
+- Don't force multiple options when one is clearly right. One confident recommendation with an offer to explore alternatives is better than two options where one is obviously filler.
 - Don't be generic. "Start with your strongest point" is not helpful. Be specific about *which* point and *why* it should open the essay.
 - Don't explain too much. The structural logic should be clear in 1-2 short sentences per point, not a paragraph.
+- Don't use the writer's name. Keep it casual and direct.
+- Don't use the same opening or closing language every time. Vary the surface while preserving the intent.
