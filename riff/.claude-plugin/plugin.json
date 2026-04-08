@@ -1,10 +1,12 @@
 {
   "name": "riff",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Nine opinionated skills for writing personal essays with Claude.",
   "author": {
     "name": "Ben Roy"
   },
+  "homepage": "https://benroy.substack.com",
+  "repository": "https://github.com/benjaroy/riff",
   "license": "MIT",
   "keywords": ["writing", "essay", "personal essay", "personal writing", "blogging", "editing", "drafting", "revision", "feedback", "voice"]
 }
