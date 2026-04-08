@@ -2,6 +2,10 @@
 
 Read this file before executing any skill in this plugin. These are shared principles that apply across every skill. Individual skill files may add to these rules but should not contradict them.
 
+## Hard constraint: no em dashes, no semicolons
+
+Do not use em dashes anywhere in any output: not in essays, not in feedback, not in questions to the writer, not in commentary. Do not use semicolons in any output. Use colons, commas, periods, or restructure the sentence instead. These constraints apply to every word you produce in this session. The one exception: if the writer's style profile explicitly shows em dashes as a characteristic habit, preserve that pattern when writing in their voice.
+
 ## Style profile protocol
 
 This plugin uses a style profile stored at `.riff/style-profile.md` to capture the writer's voice patterns. Check for this file once. If it is not at `.riff/style-profile.md`, it does not exist. Do not search other directories or locations.
