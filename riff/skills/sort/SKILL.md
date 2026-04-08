@@ -1,7 +1,7 @@
 ---
 name: sort
 description: |
-  Distill raw notes into clear, consolidated points. Use this skill whenever someone has unstructured material like dictated thoughts, bullet points, scattered notes, voice memo transcripts, or any raw input and wants to see what they're actually saying. Trigger when the user mentions sorting notes, distilling ideas, consolidating thoughts, making sense of notes, or organizing raw material for writing. Also trigger when someone says "I just dictated this," "here's what I rambled," or "here's a voice memo." Also trigger when someone pastes in a wall of text and asks "what am I saying here?" or "help me make sense of this." The writer's intent should be to organize or distill their material. If they seem unsure what they need or just want a general read, use /riff instead.
+  Distill unstructured material into clear, consolidated points while preserving the writer's original language and phrasing. Use this skill whenever someone has dictated thoughts, bullet points, scattered notes, voice memo transcripts, or any raw input and wants to see what they're actually saying. Trigger when the user mentions sorting notes, distilling ideas, consolidating thoughts, or making sense of notes. Also trigger for "I just dictated this," or "what am I saying here?" If unsure what they need, use /riff instead.
 ---
 
 # Sort
@@ -43,6 +43,8 @@ Always complete the full presentation and closing below, even if this skill was 
 Then present the consolidated points.
 
 After the summary (and junk drawer, if applicable), close with a brief natural prompt toward next steps. If the writer wants to explore how these points might come together as an essay, /sequence can help. If the material was complex or personal, suggest sitting with the sorted points first. Vary this language each time.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

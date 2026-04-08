@@ -1,7 +1,7 @@
 ---
 name: sequence
 description: |
-  Suggest possible structures for organizing a set of ideas into an essay. Use this skill whenever someone has a set of points, ideas, or notes and wants to think about how to order or structure them for an essay. Trigger when the user mentions sequencing, structuring, structure, ordering, outlining, organizing points for an essay. Also trigger if the user asks "how should I structure this?", "what order should these go in?", or "outline this." Also trigger when someone shares a list of ideas and wants to explore different ways to arrange them. The writer should already have identifiable points or ideas. If the material is still raw and unstructured, use /sort first.
+  Propose one to three structurally distinct options for arranging ideas into an essay, with reasoning for each. Ask the writer's intention before proposing structures. Use this skill whenever someone has sorted points, a list of ideas, or notes and wants to figure out essay structure or order. Trigger when the user mentions sequencing, structuring, ordering, outlining, or organizing points. Also trigger for "how should I structure this?", "what order should these go in?", or "outline this." If the material is still raw, use /sort first.
 ---
 
 # Sequence
@@ -47,6 +47,8 @@ Do not propose any structures until you have the writer's answer. Stop here and 
 Always complete the full presentation and closing below, even if this skill was invoked as part of a larger conversation. Open by acknowledging what you see in their material and stating how many structures you're about to propose. Keep it casual, something in the spirit of "I see three interesting ways these ideas could come together" or "I think there are two strong options here." Vary this each time.
 
 After presenting options, close with a light suggestion toward drafting, something in the spirit of: "Once you've picked a direction, /compose can turn this into a full essay, or you can rearrange things yourself first. Let me know." Vary this language each time.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

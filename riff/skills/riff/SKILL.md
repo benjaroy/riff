@@ -1,7 +1,7 @@
 ---
 name: riff
 description: |
-  Give a quick, practical nudge to help a writer get unstuck at any stage of the writing process. This is also the default skill when the writer is mid-process with any writing task and their next request doesn't clearly match another skill. When in doubt, trigger /riff. Use this skill whenever someone seems stuck, unsure what to do next, isn't sure what kind of help they need, or just wants a gut check on where things stand. Trigger when the user says "I'm stuck," "what should I do with this," "where do I go from here," "can you take a look at this," "I need a push," "riff on this," or any general request for direction on a piece of writing in progress. Also trigger when someone shares material without a clear ask, just wanting to know what you see. This is the right skill when the writer's intent is vague or exploratory; use /critique instead when they explicitly want a thorough assessment of a complete draft. Also trigger when the writer has a finished draft and asks what else they could do, what other directions exist, how to make it better, how to improve it, or how to keep iterating. If the writer uses the word "riff" as a verb in any context, always invoke this skill.
+  Give a quick, practical nudge to help a writer get unstuck at any stage of the writing process. Offer one to three concrete observations and a suggested next move. Default skill when the writer is mid-process and their request doesn't clearly match another skill. When in doubt, trigger /riff. Use when someone seems stuck, unsure what to do next, or wants a gut check. Trigger for "I'm stuck," "what should I do with this," "where do I go from here," "riff on this," or any vague request for direction on writing in progress. Also trigger when the writer has a finished draft and asks what else they could do with it, or when the writer uses "riff" as a verb. For thorough assessment of a complete draft, use /critique instead.
 ---
 
 # Riff
@@ -58,3 +58,5 @@ This skill also covers the moment after a draft is done, when the writer asks wh
 - Don't be vague. "This is good but could be better" is useless. Name the specific thing.
 - Don't diagnose the stage out loud. The writer doesn't need to hear "you're in the partial draft phase." Just respond in a way that meets them where they are.
 - Don't default to criticism. Getting unstuck sometimes means hearing that you're on the right track.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.

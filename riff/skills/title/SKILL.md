@@ -1,7 +1,7 @@
 ---
 name: title
 description: |
-  Generate title ideas for an essay or blog post through deep analysis of argument, imagery, and style. Use this skill whenever someone wants help naming or titling a piece of writing. Trigger when the user mentions titling, naming, what to call something, headlines, or asks "what should I call this?", "help me title this", "I need a title," or "name this." Also trigger when someone has a finished or near-finished essay and wants to brainstorm title options.
+  Generate title options for an essay or blog post across three length categories (two-word, three-word, and longer up to ten words) through analysis of argument, imagery, and style. Iterate based on what resonates. Use this skill whenever someone wants help naming or titling their writing. Trigger when the user mentions titling, naming, headlines, or asks "what should I call this?", "help me title this," "I need a title," or "name this."
 ---
 
 # Title
@@ -42,6 +42,8 @@ Open with a brief (2-3 sentence) summary of what you're keying into: the core te
 Then present the three categories with their options.
 
 After presenting, ask the writer directly: do any of these land? If something catches their eye, ask which direction and dig deeper. If nothing's clicking, say so and offer to come at it from a different angle. The key is to make clear you're ready to keep going. Vary this language each time.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## Iterative follow-up
 

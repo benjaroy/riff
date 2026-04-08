@@ -1,7 +1,7 @@
 ---
 name: critique
 description: |
-  Give a thorough, honest critique of a complete or near complete piece of writing. Use this skill whenever someone has a finished draft and wants a detailed assessment. Trigger when the user mentions critiquing, reviewing, getting feedback on, assessing, or evaluating a piece of writing. Also trigger when someone shares a complete draft and asks "how is this?" or "what's working and what isn't?" or "be honest with me about this" or "give me a thorough read." Do not trigger for quick check-ins or when the writer seems unsure what they need; that's the /riff skill.
+  Give a thorough, honest critique of a complete or near-complete essay, ranked by severity and capped at 600 words. Open with the single most important thing to fix. Close with simulated social media reactions. Use this skill whenever someone has a finished draft and wants a detailed assessment. Trigger when the user mentions critiquing, reviewing, getting feedback on, assessing, or evaluating writing. Also trigger for "how is this?", "what's working and what isn't?", "be honest with me about this," or "give me a thorough read." For quick check-ins or vague requests, use /riff instead.
 ---
 
 # Critique
@@ -45,6 +45,8 @@ At the end of your critique, include a section called **"Sample social media com
 ## How to close
 
 Always complete the full closing below, even if this skill was invoked as part of a larger conversation. After the social media comments, close by prompting the writer to decide what they want to do with the feedback. Make it clear the writer has three options: tell you which feedback points to prioritize and how they want the essay revised, ask you to implement all of the feedback, or sit with it and come back later. The writer decides what gets implemented. Present all three options each time. Vary the phrasing. If the most important feedback points to structural problems (the essay is trying to do too many things, the argument isn't there yet), say so and suggest going back to /sort or /sequence rather than forward to /revise. Vary this language each time.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

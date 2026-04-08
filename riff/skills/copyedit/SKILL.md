@@ -1,7 +1,7 @@
 ---
 name: copyedit
 description: |
-  Do a close read for grammar, punctuation, and sentence rhythm, then offer specific, reasoned suggestions. Use this skill whenever someone wants a final polish on a piece of writing. Trigger when the user mentions copy editing, proofreading, grammar check, punctuation review, polishing prose, final pass, or asks to "clean this up," "check this for errors," "do a final read," or "proofread this." Also trigger when someone has been through the drafting and revision process and wants a last look before publishing. This skill is strictly for surface-level mechanics. If the writer needs substantive changes to argument, structure, or voice, use /revise instead.
+  Do a close read for grammar, punctuation, and sentence rhythm. Offer specific suggestions that quote the passage, state the change, and give one sentence of reasoning. Strictly surface-level mechanics. Use this skill whenever someone wants a final polish on their writing. Trigger when the user mentions copy editing, proofreading, grammar check, punctuation review, polishing prose, or final pass, or asks to "clean this up," "check this for errors," "do a final read," or "proofread this." If the writer needs substantive changes to argument, structure, or voice, use /revise instead.
 ---
 
 # Copyedit
@@ -47,6 +47,8 @@ Always complete the full presentation and closing below, even if this skill was 
 Present suggestions grouped by type if clearer, or in order of appearance if there aren't many. Use your judgment.
 
 At the end, close by making three things clear: these are suggestions and the writer should ignore any that conflict with deliberate choices, you can implement the changes if they say the word, and /title can help name the piece when they're ready. Include all three each time. Vary the phrasing.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## If asked to implement
 

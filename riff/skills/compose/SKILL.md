@@ -1,7 +1,7 @@
 ---
 name: compose
 description: |
-  Write a full personal essay from structured notes in the writer's own style. Use this skill whenever someone wants to draft or compose an essay, article, or piece of personal writing from a set of notes, an outline, or structured points. Trigger when the user mentions composing, drafting, writing an essay, turning notes into prose, or asks to "write this up," "turn this into an essay," "draft this," or "write this for me." Also trigger when someone has gone through sorting or sequencing their ideas and is ready to move into actual writing. If the writer already has a full draft and wants it improved, use /revise instead.
+  Write a full personal essay from structured notes in the writer's own voice, calibrated to platform and word count. Build and save a persistent style profile from the writer's own writing samples. Use this skill whenever someone wants to draft or compose an essay, article, or piece of personal writing from notes, an outline, or structured points. Trigger when the user mentions composing, drafting, writing an essay, turning notes into prose, or asks to "write this up," "turn this into an essay," "draft this," or "write this for me." If a full draft already exists, use /revise instead.
 ---
 
 # Compose
@@ -65,6 +65,8 @@ If the notes or points provided are sparse on a particular section, keep that se
 Always complete the full presentation and closing below, even if this skill was invoked as part of a larger conversation. Start by presenting the essay. Don't preface it with a long explanation of your choices. If you want to add a brief note (one or two sentences) about a choice you made or something you want the writer's take on, put it after the essay, not before.
 
 After the draft, close with something warm and brief in the spirit of: "This is a first pass. Take a look and see how it feels." For longer or more personal drafts, lean toward suggesting the writer sit with it. For shorter pieces, lean toward the critique option. Then prompt the writer toward a next step: they could get a /critique for an honest assessment, checkpoint the draft, or just sit with it. Vary this language each time. The writer may discover new thinking by reading your draft that neither of you could have anticipated. The draft is a starting point for their process, not a product to approve.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

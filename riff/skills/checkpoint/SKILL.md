@@ -1,7 +1,7 @@
 ---
 name: checkpoint
 description: |
-  Save, view, or restore draft versions of an essay. Use this skill whenever someone wants to save the current state of their draft, see their revision history, go back to an earlier draft, or check what they've saved. Trigger when the user mentions checkpoints, saving a version, version history, previous drafts, going back, undoing changes, or asks "save this," "checkpoint this," "what did the earlier version look like?", "go back to the previous draft," "undo that," or "can I go back."
+  Save, view, and restore named draft versions of an essay as markdown files with incremental version numbering. Use this skill whenever someone wants to save their current draft, see revision history, go back to an earlier draft, or check what they've saved. Trigger when the user mentions checkpoints, saving a version, version history, previous drafts, going back, or undoing changes, or says "save this," "checkpoint this," "go back to the previous draft," or "can I go back."
 ---
 
 # Checkpoint
@@ -43,6 +43,8 @@ After saving a checkpoint, close with a brief natural prompt, something in the s
 After listing checkpoints, close naturally with something like "Let me know if you want to open any of these." No formal prompt needed.
 
 After restoring a checkpoint, close naturally with something like "Here's your earlier draft. You can revise from here, get a critique, or keep going." No formal prompt needed.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

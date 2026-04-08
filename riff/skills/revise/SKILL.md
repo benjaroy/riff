@@ -1,7 +1,7 @@
 ---
 name: revise
 description: |
-  Produce a stronger draft of an essay by implementing specific feedback while preserving the writer's voice and strengths. Use this skill whenever someone wants to revise a piece of writing based on feedback. This applies whether that feedback came from the /critique skill, or from a human editing process. Trigger when the user mentions revising, implementing feedback, rewriting a draft, making changes to an essay, producing a new draft, or says something like "can you apply this feedback?" or "help me fix this based on these notes." The key distinction from /compose is that the writer already has a draft they want to improve, not notes they want turned into prose. The key distinction from /copyedit is that revisions are substantive (argument, structure, voice) rather than mechanical (grammar, punctuation, rhythm).
+  Produce a stronger draft of an essay by implementing specific feedback point by point while preserving the writer's voice and strengths. Push back on feedback when warranted and explain why. Use this skill whenever someone wants to revise writing based on feedback, whether from /critique, a human editor, or their own notes. Trigger when the user mentions revising, implementing feedback, rewriting, making changes, or producing a new draft, or says "apply this feedback" or "fix this based on these notes." Distinct from /compose (which starts from notes, not a draft) and /copyedit (which handles mechanics only).
 ---
 
 # Revise
@@ -45,6 +45,8 @@ Revision is rarely one round. After presenting a revised draft, the writer will 
 Always complete the full presentation and closing below, even if this skill was invoked as part of a larger conversation. Present the revised draft cleanly. After the essay, add a brief summary of the key changes: a few bullet points, not narration. Each bullet should name the change and why you made it in one line. If you chose not to implement a piece of feedback, or if you implemented it but think the original was stronger, say so clearly. The writer should be able to see exactly where you agreed with the feedback and where you didn't.
 
 Close by giving the writer three clear options: flag what isn't landing for another revision pass, move to /copyedit for a final polish, or checkpoint this version. Include all three options each time. Vary the phrasing.
+
+Before presenting, re-read your full response and replace any em dashes or semicolons. This is a hard constraint, not a style preference.
 
 ## What to avoid
 

@@ -52,7 +52,7 @@ Seven of the skills form a natural pipeline: sort → sequence → compose → c
 
 **How does it handle voice?**
 
-The plugin uses a style profile to capture how you write. The first time you use /compose or /revise without a profile, it asks for a writing sample. It analyzes your sample for patterns like sentence rhythm, formality, humor, and how you handle transitions, then saves a profile that compose, revise, and copyedit can reference going forward. You can skip this step and write without a profile, or update it anytime with new samples. The other six skills (sort, sequence, critique, title, checkpoint, and riff) don't need a style profile and work immediately.
+The plugin uses a style profile to capture how you write. The first time you use /compose or /revise without a profile, it asks for a writing sample. It analyzes your sample for patterns like sentence rhythm, formality, humor, and how you handle transitions, then saves a profile that compose, revise, and copyedit can reference going forward. You can skip this step and write without a profile, or update it anytime with new samples. The other six skills (sort, sequence, critique, title, checkpoint, and riff) don't need a style profile and work immediately. Since compose and revise draft writing in two passes - one attentive to structure, the other attentive to voice - they can take a couple of minutes to generate longer essays, but the quality difference is worth the wait.
 
 **Installation**
 
