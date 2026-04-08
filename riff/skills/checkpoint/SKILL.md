@@ -18,7 +18,7 @@ When the writer asks to save a checkpoint (or says something like "save this," "
 
 **Before choosing a title prefix,** check the checkpoint directory for existing files. If the current draft is clearly a revision of an essay that already has checkpoints there, reuse the same title prefix and increment the version number. If no existing checkpoints match, establish a new title prefix.
 
-After saving, confirm briefly: something like "Saved as on-running-v2." One line, then move on.
+After saving, confirm briefly: something like "Saved as on-running-v2." One line, then move on. If the checkpoints folder now contains more than 10 files for the same essay, mention this to the writer and ask if they'd like to clean up older versions.
 
 ## Listing checkpoints
 
@@ -33,6 +33,10 @@ If the writer asks to see a previous version, read and present the checkpoint fi
 ## Restoring a checkpoint
 
 If the writer wants to go back to an earlier version, present the checkpoint and confirm they want to use it as their working draft. Once confirmed, present the restored text so the writer can use it as input for any subsequent skills.
+
+## Deleting checkpoints
+
+If the writer asks to delete a checkpoint, confirm which file they mean before removing it. If they ask to delete multiple checkpoints or clean up old versions, list what would be deleted and get confirmation before proceeding. Never delete without explicit confirmation.
 
 ## How to present it
 
@@ -50,4 +54,4 @@ Before presenting, re-read your full response and replace any em dashes or semic
 
 - Don't save checkpoints automatically. Only save when the writer asks.
 - Don't editorialize about which version is "better" unless the writer asks for your opinion. If they do, focus on argument clarity, structural coherence, and voice consistency (the same dimensions the /critique skill evaluates) rather than line-level wording differences.
-- Don't delete checkpoints. The writer decides what to keep.
+- Don't delete checkpoints unless the writer explicitly asks. Always confirm before removing anything.
