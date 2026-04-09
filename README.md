@@ -12,7 +12,7 @@ The idea behind this plugin is pretty simple. I wanted to distill the ways I've 
 
 ### /sort
 
-This skill takes unstructured material like notes, bullet points, or voice memos and distills that into a set of core points. It assesses the type of material you're working with, consolidates overlapping ideas, and preserves your original language and phrasing. Anything that doesn't fit the main structure goes into a "junk drawer" so nothing gets dropped. When it's done, it'll nudge you toward /sequence if you want to explore how those points might evolve into an essay, or suggest you take time to think about the sorted points first if the underlying material is complex.
+This skill takes unstructured material like notes, bullet points, or voice memos and distills that into a set of core points. It assesses the type of material you're working with, consolidates overlapping ideas, and preserves your original language and phrasing. Anything that doesn't fit the main structure goes into a "junk drawer" so nothing gets dropped. When it's done, it'll nudge you toward /sequence if you want to explore how those points might evolve into an essay, or it will suggest that you take time to think about the sorted points first if the underlying material is complex.
 
 ### /sequence
 
@@ -56,7 +56,7 @@ The plugin uses a style profile to capture how you write. The first time you use
 
 **Installation**
 
-Copy the URL of this GitHub repository. In the Claude desktop app, go to Cowork and click Customize in the left sidebar. Click the Plugins icon, then beside Personal plugins, click the + button to Add plugin. Select Create plugin, then Add marketplace, paste the URL, and click Sync. Once it syncs, you'll be taken to the plugin directory. Switch to the Personal tab, and you'll see Riff available to install. Once installed, the nine skills activate automatically based on what you say in your sessions. You don't need to memorize anything, though you can also call skills directly by name or with their slash commands.
+Copy the URL of this GitHub repository. In the Claude desktop app, go to Cowork and click Customize on the left sidebar. Click the Plugins icon, then beside Personal plugins, click the + button to Add plugin. Select Create plugin, then Add marketplace, paste the URL, and click Sync. Once it syncs, you'll be taken to the plugin directory. Switch to the Personal tab, and you'll see Riff available to install. Once installed, the nine skills activate automatically based on what you say in your sessions. You don't need to memorize anything, though you can also call skills directly by name or with their slash commands.
 
 **A final note**
 
